@@ -12,36 +12,53 @@ window.addEventListener("beforeunload", function (event) {
 });
 
 // Text TO Speech (start ↓)
-textToSpeech();
+
+// function textToSpeechj(text) {
+//   const synth = window.speechSynthesis;
+//   const utterance = new SpeechSynthesisUtterance(text);
+
+//   const voices = synth.getVoices();
+//   const chosenVoice = voices.find(
+//     (voice) => voice.name === "Microsoft Ravi - English (India)"
+//   );
+
+//   if (chosenVoice) {
+//     utterance.voice = chosenVoice;
+//     synth.speak(utterance);
+//   } else {
+//     synth.onvoiceschanged = function () {
+//       const voices = synth.getVoices();
+//       const chosenVoice = voices.find(
+//         (voice) => voice.name === "Microsoft Ravi - English (India)"
+//       );
+
+//       if (chosenVoice) {
+//         utterance.voice = chosenVoice;
+//         synth.speak(utterance);
+//       }
+//     };
+//   }
+// }
 function textToSpeech(text) {
-  const synth = window.speechSynthesis;
-  const utterance = new SpeechSynthesisUtterance(text);
+  if (text && 'speechSynthesis' in window) {
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'en-IN'; // Set the language to English (Indian)
 
-  const voices = synth.getVoices();
-  const chosenVoice = voices.find(
-    (voice) => voice.name === "Microsoft Ravi - English (India)"
-  );
+    // Check if the desired voice is available
+    const voices = window.speechSynthesis.getVoices();
+    const indianVoice = voices.find(voice => voice.lang === 'en-IN');
 
-  if (chosenVoice) {
-    utterance.voice = chosenVoice;
-    synth.speak(utterance);
+    if (indianVoice) {
+      utterance.voice = indianVoice;
+    } else {
+      console.warn('Indian English voice not found. Using default voice.');
+    }
+
+    window.speechSynthesis.speak(utterance);
   } else {
-    synth.onvoiceschanged = function () {
-      const voices = synth.getVoices();
-      const chosenVoice = voices.find(
-        (voice) => voice.name === "Microsoft Ravi - English (India)"
-      );
-
-      if (chosenVoice) {
-        utterance.voice = chosenVoice;
-        synth.speak(utterance);
-      }
-    };
+    console.warn('Speech synthesis is not supported in this browser.');
   }
 }
-
-// different voices - Microsoft Heera - English (India) //  Microsoft Ravi - English (India) // Google हिन्दी
-
 // Text TO Speech (End ↑)
 
 // Floting logo  (Start ↓)
