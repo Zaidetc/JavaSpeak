@@ -13,7 +13,7 @@ window.addEventListener("beforeunload", function (event) {
 
 // Text TO Speech (start ↓)
 
-// function textToSpeechj(text) {
+// function textToSpeech(text) {
 //   const synth = window.speechSynthesis;
 //   const utterance = new SpeechSynthesisUtterance(text);
 
@@ -29,7 +29,7 @@ window.addEventListener("beforeunload", function (event) {
 //     synth.onvoiceschanged = function () {
 //       const voices = synth.getVoices();
 //       const chosenVoice = voices.find(
-//         (voice) => voice.name === "Microsoft Ravi - English (India)"
+//         (voice) => voice.name === "Microsoft Heera - English (India)"
 //       );
 
 //       if (chosenVoice) {
@@ -46,7 +46,7 @@ function textToSpeech(text) {
 
     // Check if the desired voice is available
     const voices = window.speechSynthesis.getVoices();
-    const indianVoice = voices.find(voice => voice.lang === 'en-IN');
+    const indianVoice = voices.find(voice => voice.lang === 'en-IN' );
 
     if (indianVoice) {
       utterance.voice = indianVoice;
