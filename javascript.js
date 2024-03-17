@@ -12,7 +12,7 @@ window.addEventListener("beforeunload", function (event) {
 });
 
 // Text TO Speech (start ↓)
-
+textToSpeech();
 function textToSpeech(text) {
   const synth = window.speechSynthesis;
   const utterance = new SpeechSynthesisUtterance(text);
@@ -29,7 +29,7 @@ function textToSpeech(text) {
     synth.onvoiceschanged = function () {
       const voices = synth.getVoices();
       const chosenVoice = voices.find(
-        (voice) => voice.name === "Google हिन्दी"
+        (voice) => voice.name === "Microsoft Ravi - English (India)"
       );
 
       if (chosenVoice) {
