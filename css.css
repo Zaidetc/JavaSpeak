@@ -1,6 +1,4 @@
 body {
-
-  
   margin: 0;
   padding: 0;
   width: 100%;
@@ -8,15 +6,14 @@ body {
   overflow: hidden;
 }
 
-#site_logo{
-position: absolute;
+#site_logo {
+  position: absolute;
   height: 100px;
   width: auto;
   margin: 5px;
-
 }
 /*CSS For Robot  */
-.robot_container{
+.robot_container {
   display: flex;
   justify-content: center;
   width: fit-content;
@@ -27,12 +24,7 @@ position: absolute;
   overflow: visible;
   transform: scale(27);
   transition: transform 1s ease;
-
 }
-
-
-  
-
 
 #robot_img {
   width: 250px;
@@ -85,9 +77,6 @@ position: absolute;
   border-radius: 1px 1px 20px 20px;
 }
 
-
-
-
 .form_container_cls {
   position: absolute;
   display: flex;
@@ -100,8 +89,6 @@ position: absolute;
 
   z-index: 2;
 }
-
-
 
 #name {
   padding: 13px;
@@ -149,15 +136,12 @@ position: absolute;
   overflow: visible;
   text-overflow: wrap;
   text-wrap: wrap;
-  
-  box-shadow: .5px .5px 2px  -1px rgba(100, 224, 255, 0.558),
-  inset .5px .5px 10px .5px rgba(0, 174, 255, 0.403); 
 
-
+  box-shadow: 0.5px 0.5px 2px -1px rgba(100, 224, 255, 0.558),
+    inset 0.5px 0.5px 10px 0.5px rgba(0, 174, 255, 0.403);
 }
 
-#cloud_small1{
-
+#cloud_small1 {
   position: absolute;
   top: 94%;
   left: 7%;
@@ -169,48 +153,39 @@ position: absolute;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 50%;
-  
-  box-shadow: .5px .5px 2px  -1px rgba(100, 224, 255, 0.558),
-  inset .5px .5px 10px .5px rgba(0, 174, 255, 0.403); 
+
+  box-shadow: 0.5px 0.5px 2px -1px rgba(100, 224, 255, 0.558),
+    inset 0.5px 0.5px 10px 0.5px rgba(0, 174, 255, 0.403);
 }
 
-
-
-#cloud_small2{
-
+#cloud_small2 {
   position: absolute;
   top: 112%;
   left: 1%;
   width: 24px;
   height: 13px;
   z-index: 0;
-  
+
   padding: 0px;
   background: #ffffff;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 50%;
-  
-  box-shadow: .5px .5px 2px  -1px rgba(100, 224, 255, 0.558),
-  inset .5px .5px 10px .5px rgba(0, 174, 255, 0.403); 
+
+  box-shadow: 0.5px 0.5px 2px -1px rgba(100, 224, 255, 0.558),
+    inset 0.5px 0.5px 10px 0.5px rgba(0, 174, 255, 0.403);
 }
 
-#welcomeMessage{
-
+#welcomeMessage {
   position: relative;
   padding: 5px;
   top: 5vh;
-  text-shadow: .5px .5px 0.2px #000000d9;
+  text-shadow: 0.5px 0.5px 0.2px #000000d9;
   text-wrap: wrap;
   font-size: large;
   padding: 20px;
   text-align: center;
-
-
-
 }
-
-
 
 .logo {
   position: absolute;
@@ -229,28 +204,21 @@ position: absolute;
   z-index: 5;
   margin: 0;
 }
-.container_logo{
+.container_logo {
   position: absolute;
   top: 0;
- 
 }
 
-
-
-.select_logo{
-
+.select_logo {
   position: absolute;
   width: 65px;
   height: auto;
   cursor: no-drop;
   z-index: 7;
   top: 227px;
-  
-
 }
 
-
-#scrollingtxt{
+#scrollingtxt {
   color: rgb(0, 132, 255);
   text-shadow: 1px 1px 1px rgb(3, 67, 110);
 
@@ -268,18 +236,14 @@ position: absolute;
   color: rgba(127, 232, 255, 0.759);
   font-size: 74px;
   text-shadow: 2px 2px 1px rgb(3, 67, 110);
-  filter: drop-shadow(1px 1px 1px rgb(3, 67, 110) );
-  
-  
+  filter: drop-shadow(1px 1px 1px rgb(3, 67, 110));
 }
 
-
-.mainlistner{
+.mainlistner {
   display: none;
 }
 
 .imgcont {
-
   position: absolute;
   top: 15%;
 
@@ -289,38 +253,29 @@ position: absolute;
   transform: rotate(-90deg);
 }
 
-
-
-.listner_icon{
-
+.listner_icon {
   height: 75px;
   width: 75px;
   color: blue;
-
 }
 
-.imgcont2{
-
+.imgcont2 {
   position: absolute;
   top: 15%;
   left: 100%;
   z-index: 99;
 
-
-  
   transform: rotate(90deg);
 }
 
-#btn_container{
+#btn_container {
   position: relative;
   display: flex;
   justify-content: center;
   top: 28vh;
   display: none;
-
 }
-.btn{
-
+.btn {
   padding: 7px;
   border: none;
   outline: none;
@@ -330,27 +285,23 @@ position: absolute;
   font-weight: bolder;
   font-size: large;
   box-shadow: 2px 2px 5px rgb(8, 103, 193);
-  text-shadow:inset 1px 1px .2px rgb(102, 102, 102);
+  text-shadow: inset 1px 1px 0.2px rgb(102, 102, 102);
   letter-spacing: 1px;
   margin: 15px;
-  transition: .2s ease;
- cursor: pointer;
+  transition: 0.2s ease;
+  cursor: pointer;
   /* justify-content: center; */
-
 }
 
-.btn:hover{
-
+.btn:hover {
   background-color: rgb(31, 203, 246);
   color: rgb(5, 51, 79);
   box-shadow: 1px 3px 8px rgb(8, 103, 193);
-  text-shadow:inset 1px 1px .2px rgb(102, 102, 102);
+  text-shadow: inset 1px 1px 0.2px rgb(102, 102, 102);
   filter: drop-shadow(1px 1px 5px rgb(13, 131, 241));
 }
 
-
-#questionsList{
-
+#questionsList {
   position: relative;
   left: 70vw;
   top: -23vh;
@@ -360,25 +311,21 @@ position: absolute;
   grid-template-columns: repeat(5, 46px);
   grid-template-rows: repeat(2, 40px);
   gap: 17px;
-  
 }
 
-.qBtn{
-
- 
+.qBtn {
   background-color: rgb(255, 255, 255);
   color: rgb(2, 79, 127);
 
   font-weight: bolder;
   font-size: large;
   box-shadow: 2px 2px 5px rgba(8, 104, 193, 0.662);
-  text-shadow:inset 1px 1px .2px rgb(102, 102, 102);
+  text-shadow: inset 1px 1px 0.2px rgb(102, 102, 102);
   border: none;
   border-radius: 5px;
-
 }
 
-#ans_container{
+#ans_container {
   position: absolute;
   top: 20vh;
   left: 0;
@@ -387,15 +334,12 @@ position: absolute;
   height: 200px;
   width: 450px;
   display: none;
-  
-
-
 }
 
-#span_container,#span_container2 {
-
+#span_container,
+#span_container2 {
   text-overflow: wrap;
-  
+
   font-size: larger;
   text-align: justify;
   box-shadow: 2px 2px 5px rgba(8, 104, 193, 0.662);
@@ -407,6 +351,4 @@ position: absolute;
   display: none;
   line-height: 1.5;
   text-indent: 5px;
-
-  
 }

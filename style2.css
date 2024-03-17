@@ -1,100 +1,65 @@
 @media screen and (max-width: 480px) {
-  
-  
   #chat_container {
     top: 7%;
-    left: 120px; 
+    left: 120px;
     width: 245px;
     height: 131px;
   }
-  #cloud_small1{
-
+  #cloud_small1 {
     top: 104%;
     left: 27%;
     width: 32px;
     height: 18px;
-
-
-
   }
-  #site_logo{
-
+  #site_logo {
     height: 70px;
     width: auto;
     margin: 5px;
-  
   }
-  #cloud_small2{
-
+  #cloud_small2 {
     top: 124%;
     left: 25%;
   }
-
 
   .logo {
     width: 50px;
     height: auto;
   }
-  
 
-  #questionsList{
+  #questionsList {
     display: none;
   }
 
-  #ans_container{
-
+  #ans_container {
     top: 45vh;
     z-index: 55;
-    margin: 2px ;
+    margin: 2px;
     width: 98.5vw;
   }
 
-  .ansBtn1{
-    
+  .ansBtn1 {
     float: left;
     margin: 0;
     font-size: small;
-
   }
-  .ansBtn2{
-    
+  .ansBtn2 {
     float: right;
     margin: 0;
     font-size: small;
-
-
   }
 
-  #span_container,#span_container2{
-
+  #span_container,
+  #span_container2 {
     font-size: medium;
-    margin: 70px 8px 0 8px; 
+    margin: 70px 8px 0 8px;
     z-index: 99;
     background-color: rgba(255, 255, 255, 0.937);
-
-
   }
 
-#btn_container{
-
-
-  top: 33vh;
- 
-
-}
-.phonebtn{
-  margin:5px 40px 5px 40px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
+  #btn_container {
+    top: 33vh;
+  }
+  .phonebtn {
+    margin: 5px 40px 5px 40px;
+  }
 }

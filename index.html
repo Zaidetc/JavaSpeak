@@ -4,70 +4,56 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
     <title>JavaSpeak</title>
     <link rel="stylesheet" href="css.css" />
     <link rel="stylesheet" href="style2.css" />
   </head>
   <body>
+    <div id="site_logo_contnr">
+      <img id="site_logo" src="images\logo.png" alt="" />
+    </div>
 
-<div id="site_logo_contnr">
-  <img id="site_logo" src="images\logo.png" alt="">
-</div>
+    <div id="scrollingtxt">
+      <marquee behavior="scroll" direction="left"
+        >To Initiate the Practice, Drag Logo To The Mouth.</marquee
+      >
+    </div>
 
-
-
-
-
-<div id="scrollingtxt">
-  <marquee behavior="scroll" direction="left">To Initiate the Practice, Drag Logo To The Mouth.</marquee>
-</div>
-
-
-
-<div class="countdown">
-  <div id="count"></div>
-</div>
-
-
-
-
-
-  
+    <div class="countdown">
+      <div id="count"></div>
+    </div>
 
     <div id="robot_container" class="robot_container">
-
-    
       <img id="robot_img" src="images\Robot_Z.png" />
       <div class="robot_eye_left robot_eyes"></div>
       <div class="robot_eye_right robot_eyes"></div>
-      
+
       <div class="imgcont mainlistner">
-        <lord-icon class="listner_icon"
-            src="https://cdn.lordicon.com/dkhzauae.json"
-            trigger="loop"
-            colors="primary:#9ce5f4"
-            state="loop-wifi">
+        <lord-icon
+          class="listner_icon"
+          src="https://cdn.lordicon.com/dkhzauae.json"
+          trigger="loop"
+          colors="primary:#9ce5f4"
+          state="loop-wifi"
+        >
         </lord-icon>
       </div>
-    
-    
+
       <div class="imgcont2 mainlistner">
-        <lord-icon class="listner_icon"
-            src="https://cdn.lordicon.com/dkhzauae.json"
-            trigger="loop"
-            colors="primary:#9ce5f4"
-            state="loop-wifi">
+        <lord-icon
+          class="listner_icon"
+          src="https://cdn.lordicon.com/dkhzauae.json"
+          trigger="loop"
+          colors="primary:#9ce5f4"
+          state="loop-wifi"
+        >
         </lord-icon>
       </div>
 
       <div class="robot_mouth"></div>
-
     </div>
-
-
-
-
 
     <div id="form_container" class="form_container_cls">
       <form onsubmit="ZoomOut(event)">
@@ -78,7 +64,8 @@
           placeholder="Enter Your Name"
           autocapitalize="words"
           required
-          oninput="this.value = this.value.replace(/\s+/g, '')"/>
+          oninput="this.value = this.value.replace(/\s+/g, '')"
+        />
 
         <button type="submit" id="btn">Enter</button>
       </form>
@@ -89,39 +76,40 @@
       <div id="cloud_small2"></div>
       <div id="welcomeMessage"></div>
     </div>
-   
-    
-    <div class="container_logo"></div>
 
+    <div class="container_logo"></div>
 
     <div id="selected_logo_container"></div>
 
     <div id="btn_container">
-    
       <!-- <button class="btn" onclick="previousQ();stopSpeechToText();">Previous</button> -->
       <!-- <button class="btn" onclick="nextQ();stopSpeechToText();">Next</button> -->
-      <button class="btn phonebtn tryAgainBtn" onclick="tryAgain();stopSpeechToText();">Try Again</button>
-      <button class="btn phonebtn saveBtn" onclick="storingAns();nextQ();stopSpeechToText();">Save & Next</button>
+      <button
+        class="btn phonebtn tryAgainBtn"
+        onclick="tryAgain();stopSpeechToText();"
+      >
+        Try Again
+      </button>
+      <button
+        class="btn phonebtn saveBtn"
+        onclick="storingAns();nextQ();stopSpeechToText();"
+      >
+        Save & Next
+      </button>
+    </div>
 
+    <div id="ans_container">
+      <button class="ansBtn ansBtn1 btn" onclick="correctAns();">
+        Correct Ans
+      </button>
+      <button class="ansBtn ansBtn2 btn" onclick="yourAns()">Your Ans</button>
+      <div id="span_container"></div>
+      <div id="span_container2"></div>
+    </div>
 
-
-  </div>
-
-<div id="ans_container">
-
-  <button class="ansBtn ansBtn1 btn" onclick="correctAns();">Correct Ans</button>
-  <button class="ansBtn ansBtn2 btn" onclick="yourAns()">Your Ans</button>
-  <div id="span_container"></div>
-  <div id="span_container2"></div>
-
-</div>
-
-  <div id="questionsList">
-  </div>
-
+    <div id="questionsList"></div>
 
     <script src="javascript.js"></script>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
-
   </body>
 </html>
