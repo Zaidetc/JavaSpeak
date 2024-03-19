@@ -39,6 +39,13 @@ window.addEventListener("beforeunload", function (event) {
 //     };
 //   }
 // }
+
+let voices = [];
+if ('speechSynthesis' in window) {
+  // Fetch available voices
+  voices = window.speechSynthesis.getVoices();
+}
+
 function textToSpeech(text) {
   if (text && 'speechSynthesis' in window) {
     const utterance = new SpeechSynthesisUtterance(text);
@@ -46,7 +53,7 @@ function textToSpeech(text) {
 
     // Check if the desired voice is available
     const voices = window.speechSynthesis.getVoices();
-    const indianVoice = voices.find(voice => voice.lang === 'en-IN' );
+    let indianVoice = voices.find(voice => voice.lang === 'en-IN' );
 
     if (indianVoice) {
       utterance.voice = indianVoice;
